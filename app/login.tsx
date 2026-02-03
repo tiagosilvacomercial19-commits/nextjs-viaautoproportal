@@ -1,24 +1,58 @@
 export default function Login() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
-      <h1>Login</h1>
-      <p>Acesso à plataforma ViaAuto Pro</p>
+    <main
+      style={{
+        minHeight: "70vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "40px",
+      }}
+    >
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "400px",
+          border: "1px solid #ddd",
+          padding: "30px",
+        }}
+      >
+        <h1 style={{ marginBottom: "20px" }}>Acessar Plataforma</h1>
 
-      <form style={{ maxWidth: "300px" }}>
-        <input
-          type="email"
-          placeholder="E-mail"
-          style={{ width: "100%", marginBottom: "10px", padding: "8px" }}
-        />
-        <input
-          type="password"
-          placeholder="Senha"
-          style={{ width: "100%", marginBottom: "10px", padding: "8px" }}
-        />
-        <button type="submit" style={{ padding: "10px", width: "100%" }}>
-          Entrar
-        </button>
-      </form>
+        <form>
+          <div style={{ marginBottom: "15px" }}>
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="seu@email.com"
+              style={{ width: "100%", padding: "10px", marginTop: "5px" }}
+            />
+          </div>
+
+          <div style={{ marginBottom: "20px" }}>
+            <label>Senha</label>
+            <input
+              type="password"
+              placeholder="••••••••"
+              style={{ width: "100%", padding: "10px", marginTop: "5px" }}
+            />
+          </div>
+
+          <button
+            type="submit"
+            style={{
+              width: "100%",
+              padding: "12px",
+              backgroundColor: "#000",
+              color: "#fff",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            Entrar
+          </button>
+        </form>
+      </div>
     </main>
   );
 }
