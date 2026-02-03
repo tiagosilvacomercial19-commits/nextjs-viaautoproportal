@@ -8,36 +8,29 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
-        <header
-          style={{
-            padding: "15px 40px",
-            backgroundColor: "#000",
-            color: "#fff",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <strong>ViaAuto Pro</strong>
+        <header style={{ backgroundColor: "#000", color: "#fff" }}>
+  <div
+    style={{
+      padding: "20px 40px",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+    }}
+  >
+    {/* LOGO */}
+    <div style={{ fontSize: "22px", fontWeight: "bold" }}>
+      ViaAuto<span style={{ color: "#999" }}>Pro</span>
+    </div>
 
-          <nav style={{ display: "flex", gap: "20px" }}>
-            <a href="/" style={{ color: "#fff", textDecoration: "none" }}>
-              Home
-            </a>
-            <a href="/catalogo" style={{ color: "#fff", textDecoration: "none" }}>
-              Catálogo
-            </a>
-            <a href="/planos" style={{ color: "#fff", textDecoration: "none" }}>
-              Planos
-            </a>
-            <a href="/dashboard" style={{ color: "#fff", textDecoration: "none" }}>
-              Dashboard
-            </a>
-            <a href="/login" style={{ color: "#fff", textDecoration: "none" }}>
-              Login
-            </a>
-          </nav>
-        </header>
+    {/* MENU */}
+    <nav style={{ display: "flex", gap: "20px" }}>
+      <a href="/" style={{ color: "#fff", textDecoration: "none" }}>Início</a>
+      <a href="/catalogo" style={{ color: "#fff", textDecoration: "none" }}>Catálogo</a>
+      <a href="/planos" style={{ color: "#fff", textDecoration: "none" }}>Planos</a>
+      <a href="/login" style={{ color: "#fff", textDecoration: "none" }}>Entrar</a>
+    </nav>
+  </div>
+</header>
 
         <main>{children}</main>
       </body>
