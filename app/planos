@@ -1,35 +1,44 @@
-export default function Planos() {
+export default function PlanosPage() {
   return (
     <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
       <h1>Planos ViaAuto Pro</h1>
-      <p>Escolha o plano ideal para o seu negócio</p>
+      <p>Escolha o plano ideal para sua loja.</p>
 
-      <section style={{ display: "flex", gap: "20px", marginTop: "30px" }}>
+      <div style={{ display: "flex", gap: "20px", marginTop: "30px" }}>
+        
         <div style={{ border: "1px solid #ccc", padding: "20px", width: "250px" }}>
           <h2>Básico</h2>
-          <p><strong>R$ 0,00</strong></p>
+          <p>R$ 49/mês</p>
           <ul>
-            <li>Cadastro de veículos</li>
-            <li>Catálogo público</li>
-            <li>Suporte limitado</li>
+            <li>✔️ 5 anúncios</li>
+            <li>✔️ Suporte básico</li>
           </ul>
+          <button>Assinar</button>
         </div>
 
         <div style={{ border: "2px solid #000", padding: "20px", width: "250px" }}>
-          <h2>Premium</h2>
-          <p><strong>R$ 199,00 / mês</strong></p>
+          <h2>Profissional</h2>
+          <p>R$ 99/mês</p>
           <ul>
-            <li>Dashboard completo</li>
-            <li>Destaque no catálogo</li>
-            <li>Relatórios de vendas</li>
-            <li>Suporte prioritário</li>
+            <li>✔️ Anúncios ilimitados</li>
+            <li>✔️ Destaque no catálogo</li>
+            <li>✔️ Suporte prioritário</li>
           </ul>
+          <button>Assinar</button>
         </div>
-      </section>
 
-      <a href="/" style={{ display: "inline-block", marginTop: "30px" }}>
-        Voltar para Home
-      </a>
+        <div style={{ border: "1px solid #ccc", padding: "20px", width: "250px" }}>
+          <h2>Premium</h2>
+          <p>R$ 199/mês</p>
+          <ul>
+            <li>✔️ Tudo do Profissional</li>
+            <li>✔️ Dashboard avançado</li>
+            <li>✔️ Consultoria mensal</li>
+          </ul>
+          <button>Assinar</button>
+        </div>
+
+      </div>
     </main>
   );
 }
