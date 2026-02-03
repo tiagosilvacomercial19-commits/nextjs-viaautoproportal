@@ -1,0 +1,35 @@
+export default function Dashboard() {
+  return (
+    <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
+      <h1>Dashboard ViaAuto Pro</h1>
+      <p>Central de controle para vendedores e lojistas</p>
+
+      <section style={{ marginTop: "30px" }}>
+        <h2>Resumo de Veículos</h2>
+        <ul style={{ listStyle: "none", padding: 0 }}>
+          <li style={{ marginBottom: "15px" }}>
+            <strong>Fiat Cronos 2020</strong> — Vendido: 0 | Em estoque: 1
+          </li>
+          <li style={{ marginBottom: "15px" }}>
+            <strong>Corolla 2018</strong> — Vendido: 1 | Em estoque: 0
+          </li>
+          <li style={{ marginBottom: "15px" }}>
+            <strong>Kicks 2022</strong> — Vendido: 0 | Em estoque: 1
+          </li>
+        </ul>
+      </section>
+
+      <section style={{ marginTop: "30px" }}>
+        <h2>Planos Ativos</h2>
+        <ul>
+          <li>Básico: R$ 0,00</li>
+          <li>Premium: R$ 199,00/mês</li>
+        </ul>
+      </section>
+
+      <a href="/" style={{ display: "inline-block", marginTop: "20px" }}>
+        Voltar para Home
+      </a>
+    </main>
+  );
+}
