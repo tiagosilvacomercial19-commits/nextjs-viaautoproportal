@@ -1,28 +1,36 @@
 export default function DashboardPage() {
   return (
     <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
-      <h1>Dashboard – ViaAuto Pro</h1>
+      <h1>Dashboard - ViaAuto Pro</h1>
+      <p>Bem-vindo, lojista 👋</p>
 
-      <p>Bem-vindo ao painel do portal.</p>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px", marginTop: "30px" }}>
+        
+        <div style={{ border: "1px solid #ccc", padding: "20px" }}>
+          <h3>Anúncios Ativos</h3>
+          <strong>12</strong>
+        </div>
 
-      <section style={{ marginTop: "30px" }}>
-        <h2>Resumo rápido</h2>
+        <div style={{ border: "1px solid #ccc", padding: "20px" }}>
+          <h3>Visualizações</h3>
+          <strong>1.245</strong>
+        </div>
+
+        <div style={{ border: "1px solid #ccc", padding: "20px" }}>
+          <h3>Leads Recebidos</h3>
+          <strong>37</strong>
+        </div>
+
+      </div>
+
+      <div style={{ marginTop: "40px" }}>
+        <h2>Ações Rápidas</h2>
         <ul>
-          <li>🚗 Veículos cadastrados: 0</li>
-          <li>📨 Leads recebidos: 0</li>
-          <li>🏪 Lojistas ativos: 0</li>
+          <li>➕ Cadastrar veículo</li>
+          <li>✏️ Editar anúncios</li>
+          <li>📊 Ver relatórios</li>
         </ul>
-      </section>
-
-      <section style={{ marginTop: "30px" }}>
-        <h2>Ações</h2>
-        <button style={{ marginRight: "10px" }}>
-          Cadastrar veículo
-        </button>
-        <button>
-          Gerenciar anúncios
-        </button>
-      </section>
+      </div>
     </main>
   );
 }
