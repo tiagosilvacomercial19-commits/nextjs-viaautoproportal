@@ -1,30 +1,39 @@
 export default function Catalogo() {
   return (
-    <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
+    <main style={{ padding: "60px 40px" }}>
       <h1>Catálogo de Veículos</h1>
-      <p>Veja todos os veículos disponíveis para venda e consignação.</p>
 
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        <li style={{ marginBottom: "20px" }}>
-          <strong>Fiat Cronos 2020</strong><br />
-          R$ 69.900,00<br />
-          Quilometragem: 85.000 km
-        </li>
-        <li style={{ marginBottom: "20px" }}>
-          <strong>Corolla 2018 XEi</strong><br />
-          R$ 72.000,00<br />
-          Quilometragem: 85.000 km
-        </li>
-        <li style={{ marginBottom: "20px" }}>
-          <strong>Kicks 2022</strong><br />
-          R$ 95.000,00<br />
-          Quilometragem: 40.000 km
-        </li>
-      </ul>
+      <p style={{ marginTop: "10px", color: "#666" }}>
+        Veículos disponíveis no portal ViaAuto Pro
+      </p>
 
-      <a href="/" style={{ display: "inline-block", marginTop: "20px" }}>
-        Voltar para Home
-      </a>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+          gap: "20px",
+          marginTop: "40px",
+        }}
+      >
+        {/* CARD */}
+        <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+          <h3>Corolla XEi 2020</h3>
+          <p>Automático • Flex</p>
+          <strong>R$ 79.900</strong>
+        </div>
+
+        <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+          <h3>Compass Limited 2019</h3>
+          <p>Automático • Diesel</p>
+          <strong>R$ 89.900</strong>
+        </div>
+
+        <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+          <h3>Civic EXL 2018</h3>
+          <p>Automático • Flex</p>
+          <strong>R$ 74.900</strong>
+        </div>
+      </div>
     </main>
   );
 }
