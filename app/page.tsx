@@ -1,84 +1,39 @@
 export default function Home() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif" }}>
-      {/* BANNER */}
-      <section
-        style={{
-          height: "80vh",
-          background: "linear-gradient(135deg, #000, #222)",
-          color: "#fff",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          padding: "0 40px",
-        }}
-      >
-        <h1 style={{ fontSize: "48px", maxWidth: "700px" }}>
-          O portal profissional para vender e gerir veículos
-        </h1>
+    <>
+      <header style={{ padding: "20px", background: "#020617", color: "#fff" }}>
+        <strong>ViaAuto Pro</strong>
+        <nav style={{ marginTop: "10px" }}>
+          <a href="#catalogo" style={{ marginRight: 15, color: "#fff" }}>Catálogo</a>
+          <a href="#planos" style={{ marginRight: 15, color: "#fff" }}>Planos</a>
+          <a href="#login" style={{ color: "#fff" }}>Login</a>
+        </nav>
+      </header>
 
-        <p style={{ fontSize: "20px", maxWidth: "600px", marginTop: "20px" }}>
-          Conectamos vendedores, lojistas e compradores em um único ecossistema
-          inteligente.
-        </p>
-
-        <div style={{ marginTop: "30px", display: "flex", gap: "20px" }}>
-          <a
-            href="/catalogo"
-            style={{
-              padding: "15px 25px",
-              backgroundColor: "#fff",
-              color: "#000",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            Ver Catálogo
-          </a>
-
-          <a
-            href="/planos"
-            style={{
-              padding: "15px 25px",
-              border: "2px solid #fff",
-              color: "#fff",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            Conhecer Planos
-          </a>
-        </div>
+      <section style={{ padding: "60px" }}>
+        <h1>Portal Automotivo Profissional</h1>
+        <p>Conectando lojistas, vendedores e compradores</p>
       </section>
 
-      {/* BENEFÍCIOS */}
-      <section style={{ padding: "60px 40px" }}>
-        <h2>Por que usar o ViaAuto Pro?</h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "30px",
-            marginTop: "30px",
-          }}
-        >
-          <div>
-            <h3>🚗 Catálogo Organizado</h3>
-            <p>Todos os veículos centralizados em um único lugar.</p>
-          </div>
-
-          <div>
-            <h3>📊 Dashboard Inteligente</h3>
-            <p>Controle total de estoque, vendas e performance.</p>
-          </div>
-
-          <div>
-            <h3>💰 Monetização Clara</h3>
-            <p>Planos simples e escaláveis para lojistas e vendedores.</p>
-          </div>
-        </div>
+      <section id="catalogo" style={{ padding: "60px", background: "#f5f5f5" }}>
+        <h2>Catálogo</h2>
+        <p>Veículos disponíveis em breve.</p>
       </section>
-    </main>
+
+      <section id="planos" style={{ padding: "60px" }}>
+        <h2>Planos</h2>
+        <p>Planos para lojistas e vendedores.</p>
+      </section>
+
+      <section id="login" style={{ padding: "60px", background: "#f5f5f5" }}>
+        <h2>Login</h2>
+        <input placeholder="Email" /><br /><br />
+        <input placeholder="Senha" type="password" />
+      </section>
+
+      <footer style={{ padding: "20px", background: "#020617", color: "#fff" }}>
+        © ViaAuto Pro
+      </footer>
+    </>
   );
 }
